@@ -1,7 +1,13 @@
-<%@elements.each do|element|%>
-  <ul>
+<h2>検索</h2>
+<%= form_tag(root_path, method: :get) do %>
+  <%= text_field_tag :search %>
+  <%= submit_tag '検索', id:"search_submit",:title=>nil %>
+<% end %>
+
+<ul>
+  <%@elements.each do|element|%>
     <li>
-      <%=link_to(element.title,element.url)%>
+      <p><%=link_to(element.title,element.url)%></p>
     </li>
-  </ul>
-<%end%>
+  <%end%>
+</ul>

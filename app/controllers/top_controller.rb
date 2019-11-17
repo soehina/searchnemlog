@@ -8,6 +8,10 @@ class TopController < ApplicationController
             @element=Article.new(:url=>element.get_attribute(:href),:title=>element.inner_text)
             @element.save
         end
-        @elements=Article.all
+        @elements=Article.all.search(params[:search]).order(created_at: 'DESC')
+    end
+
+    def search
+        @elements = Article.where('title ?', params[:title]).order(created_at: 'DESC')
     end
 end
