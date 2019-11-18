@@ -1,13 +1,23 @@
-<h2>検索</h2>
-<%= form_tag(root_path, method: :get) do %>
-  <%= text_field_tag :search %>
-  <%= submit_tag '検索', id:"search_submit",:title=>nil %>
-<% end %>
+<div class="container mtb">
+  <div class="centered">
+    <div>
+      <div class="he-wrap tpl6">
+        <h2 id="search">nemlog記事検索</h2>
+        <%= form_tag(root_path, method: :get) do %>
+          <%= text_field_tag :search %>
+          <%= submit_tag '検索', class:"submit-btn",:title=>nil %>
+        <% end %>
+      </div>
 
-<ul>
-  <%@elements.each do|element|%>
-    <li>
-      <p><%=link_to(element.title,element.url)%></p>
-    </li>
-  <%end%>
-</ul>
+      <div class="he-wrap tpl6">
+        <ul>
+          <%@elements.each do|element|%>
+            <li>
+              <p><%=link_to element.title,element.url,target: :_blank %></p>
+            </li>
+          <%end%>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

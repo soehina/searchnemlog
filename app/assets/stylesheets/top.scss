@@ -1,3 +1,204 @@
 // Place all the styles related to the top controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+/**
+* Template Name: Solid
+* Template URL: https://templatemag.com/solid-bootstrap-business-template/
+* Author: TemplateMag.com
+* License: https://templatemag.com/license/
+*/
+
+/*	################################################################
+	1. GENERAL STRUCTURES
+################################################################# */
+* {
+    margin: 0;
+    padding: 0px;
+}
+
+body {
+background: #ffffff;
+margin: 0;
+height: 100%;
+color: #384452;
+font-family: 'Lato', sans-serif;
+font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Raleway', sans-serif;
+font-weight: 700;
+}
+
+p {
+padding: 0;
+margin-bottom: 12px;
+font-family: 'Lato', sans-serif;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+color: #384452;
+margin-top: 10px;
+}
+
+a {
+padding: 0;
+margin: 0;
+color: #384452;
+text-decoration: none;
+-webkit-transition: background-color .4s linear, color .4s linear;
+-moz-transition: background-color .4s linear, color .4s linear;
+-o-transition: background-color .4s linear, color .4s linear;
+-ms-transition: background-color .4s linear, color .4s linear;
+transition: background-color .4s linear, color .4s linear;
+}
+a:hover,
+a:focus {
+text-decoration: none;
+color:#01b2fe;
+}
+
+::-moz-selection  {
+color: #fff;
+text-shadow:none;
+background:#2B2E31;
+}
+::selection {
+color: #fff;
+text-shadow:none;
+background:#2B2E31;
+}
+
+.centered {
+text-align: center
+}
+
+/* Services Wrap */
+#service {
+margin-top: 100px;
+margin-bottom: 80px;
+}
+
+#service i {
+color: #00b3fe;
+font-size: 60px;
+padding: 15px;
+}
+
+/* Footer */
+#footerwrap {
+padding-top: 60px;
+padding-bottom: 60px;
+background: #384452;
+}
+
+#footerwrap p {
+color: #bfc9d3;
+}
+
+#footerwrap h4 {
+color: white;
+}
+
+#footerwrap i {
+font-size: 30px;
+color: #bfc9d3;
+padding-right: 25px;
+}
+
+#footerwrap i:hover {
+color: #00b3fe
+}
+
+/*	################################################################
+PAGE CONFIGURATIONS
+################################################################# */
+/* General Tweaks */
+
+#blue {
+background: #00b3fe;
+margin-bottom: 60px;
+padding-top: 25px;
+padding-bottom: 25px;
+}
+
+#blue h1 {
+color: white;
+margin-left: 15px;
+}
+
+csmall {
+font-size: 12px;
+color: #b3b3b3;
+}
+csmall2 {
+font-size: 12px;
+color: #f39c12
+}
+
+@-webkit-keyframes animate-loading {
+0% {
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+}
+
+100% {
+-webkit-transform: rotate(360deg);
+transform: rotate(360deg);
+}
+}
+
+@keyframes animate-loading {
+0% {
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+}
+
+100% {
+-webkit-transform: rotate(360deg);
+transform: rotate(360deg);
+}
+}
+
+/* Copyrights */
+
+#copyrights {
+background: #202b38;
+padding: 20px 0;
+text-align: center;
+}
+
+#copyrights p {
+margin-bottom: 5px;
+color: #fff;
+}
+
+#copyrights a {
+color: #00b3fe;
+}
+
+.credits {
+color: #fff;
+}
+
+.submit-btn{
+    width: auto;
+    height: auto;
+    background-color: slategrey;
+    color: white;
+    padding: 2px 10px;
+    border-radius: 5px;
+}
+
+ul li{
+    list-style: none;
+}
+
+#search{
+    margin: 20px 0;
+}
+
+.he-wrap{
+    margin: 50px 0;
+}

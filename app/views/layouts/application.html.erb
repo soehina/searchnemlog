@@ -4,12 +4,36 @@
     <title>AppName</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <%= yield %>
+    <div id="blue">
+      <div class="container">
+        <div class="row">
+          <h1>nemlog search</h1>
+        </div>
+      </div>
+    </div>
+      <%= yield %>
+      <div id="copyrights">
+        <div class="container">
+        <p>Created by <strong><a href="https://nemlog.nem.social/profile/3981" target="_blank">yonnsann</a></strong></p>
+          <p>
+            &copy; Copyrights <strong>Solid</strong>. All Rights Reserved
+          </pp>
+          <div class="credits">
+            <!--
+              You are NOT allowed to delete the credit link to TemplateMag with free version.
+              You can delete the credit link only if you bought the pro version.
+              Buy the pro version with working PHP/AJAX contact form: https://templatemag.com/solid-bootstrap-business-template/
+              Licensing information: https://templatemag.com/license/
+            -->
+            Created with Solid template by <a href="https://templatemag.com/">TemplateMag</a>
+          </div>
+        </div>
+    </div>
   </body>
 </html>
