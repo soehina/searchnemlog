@@ -1,5 +1,5 @@
 class TopController < ApplicationController
-    PRE=15
+    PRE=30
     def home
         agent = Mechanize.new
         page = agent.get("https://nemlog.nem.social/")
